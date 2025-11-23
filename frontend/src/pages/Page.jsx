@@ -3,8 +3,9 @@ import React from 'react'
 import Header from '../components/header'
 import Hero from '../components/hero/Hero'
 import About from '../components/about/About'
-import  Portfolio from '../components/portfolio/Portfolio'
+import Portfolio from '../components/portfolio/Portfolio'
 import Services from '../components/Services/Services'
+import Contact from '../components/contact/Contact'
 export default function Page() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function Page() {
       <About />
       <Portfolio />
       <Services />
+      <Contact />
     </div>
   )
 }
