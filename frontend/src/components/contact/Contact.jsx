@@ -180,30 +180,77 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="social-section">
-                <h4 className="social-title">Connect With Me</h4>
-                <div className="social-links">
+             
+
+            </div>
+
+            <div className="social-section">
+                <h4 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white mb-10">
+                  Connect With Me
+                </h4>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                   {socialLinks.map((social, index) => (
                     <a
                       key={social.name}
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="social-link"
                       style={{ animationDelay: `${index * 0.1}s` }}
+                      className="
+          group flex items-center gap-6 px-6 py-5
+          bg-white dark:bg-gray-900
+          border border-gray-300 dark:border-gray-700
+          rounded-2xl shadow-lg hover:shadow-2xl
+          transition-all duration-300 hover:scale-[1.03]
+          backdrop-blur-sm relative overflow-hidden
+        "
                     >
-                      <div className="social-icon">
-                        {social.icon}
+                      {/* ICON BLOCK */}
+                      <div
+                        className="
+            w-16 h-16 flex items-center justify-center
+            rounded-xl flex-shrink-0 p-3
+            bg-gradient-to-br from-indigo-500 to-purple-600
+            text-white shadow-lg
+            transition-transform duration-300 group-hover:scale-110
+          "
+                      >
+                        <div className="w-10 h-10 flex items-center justify-center">
+                          {social.icon}
+                        </div>
                       </div>
-                      <div className="social-info">
-                        <span className="social-name">{social.name}</span>
-                        <span className="social-username">{social.username}</span>
+
+                      {/* TEXT BLOCK */}
+                      <div className="flex-1 min-w-0">
+                        <p className="
+            font-bold text-lg
+            text-gray-900 dark:text-white
+            transition-colors duration-300
+            group-hover:text-indigo-500 dark:group-hover:text-indigo-400
+          ">
+                          {social.name}
+                        </p>
+
+                        <p className="text-gray-600 dark:text-gray-300 text-[15px] font-medium truncate">
+                          {social.username}
+                        </p>
                       </div>
+
+                      {/* ARROW */}
+                      <span
+                        className="
+            text-indigo-500 opacity-0 group-hover:opacity-100 
+            transform translate-x-2 group-hover:translate-x-0
+            transition-all duration-300 font-bold text-xl
+          "
+                      >
+                        →
+                      </span>
                     </a>
                   ))}
                 </div>
               </div>
-            </div>
           </div>
 
           {/* Contact Form */}
