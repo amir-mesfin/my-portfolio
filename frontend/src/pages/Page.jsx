@@ -6,6 +6,8 @@ import About from '../components/about/About'
 import Portfolio from '../components/portfolio/Portfolio'
 import Services from '../components/Services/Services'
 import Contact from '../components/contact/Contact'
+import Blog from '../components/blog/Blog'
+import Footer from '../components/Footer/Footer'
 export default function Page() {
   return (
     <div>
@@ -15,6 +17,8 @@ export default function Page() {
       <Portfolio />
       <Services />
       <Contact />
+      <Blog />
+      <Footer />
     </div>
   )
 }
