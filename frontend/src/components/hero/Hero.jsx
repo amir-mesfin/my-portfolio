@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Hero.css';
-import { Profiler } from 'react';
+import Profiler from "../../assets/images/profile.png";
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +9,7 @@ const Hero = () => {
 
   const roles = [
     "Software Developer",
-    "Web Developer", 
+    "Web Developer",
     "Full Stack Developer",
     "MERN Stack Specialist",
     "React Developer",
@@ -23,7 +23,7 @@ const Hero = () => {
   // Typing animation effect
   useEffect(() => {
     const current = roles[currentRole];
-    
+
     const timeout = setTimeout(() => {
       if (!isDeleting && displayText.length < current.length) {
         // Typing
@@ -83,8 +83,8 @@ const Hero = () => {
 
             {/* Description */}
             <p className="hero-description">
-              Passionate MERN stack developer crafting robust and scalable web applications. 
-              Expert in MongoDB, Express.js, React.js, and Node.js with focus on 
+              Passionate MERN stack developer crafting robust and scalable web applications.
+              Expert in MongoDB, Express.js, React.js, and Node.js with focus on
               performance, clean code, and exceptional user experiences.
             </p>
 
@@ -96,7 +96,7 @@ const Hero = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </button>
-              
+
               <button className="btn-secondary">
                 <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -127,23 +127,23 @@ const Hero = () => {
           <div className={`hero-image-wrapper ${isVisible ? 'hero-visible' : ''}`}>
             <div className="hero-image-container">
               {/* Main Image */}
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
+              <img
+                src={Profiler}
                 alt="Amir Mesfin - Developer"
                 className="hero-main-image"
               />
-              
+
               {/* Floating Elements */}
               <div className="floating-card card-1">
                 <div className="card-icon react">⚛️</div>
                 <span>React.js</span>
               </div>
-              
+
               <div className="floating-card card-2">
                 <div className="card-icon node">⬢</div>
                 <span>Node.js</span>
               </div>
-              
+
               <div className="floating-card card-3">
                 <div className="card-icon mongo">🍃</div>
                 <span>MongoDB</span>
@@ -156,7 +156,7 @@ const Hero = () => {
 
               {/* Background Decoration */}
               <div className="image-background"></div>
-              
+
               {/* Status Indicator */}
               <div className="status-indicator">
                 <div className="status-dot"></div>
