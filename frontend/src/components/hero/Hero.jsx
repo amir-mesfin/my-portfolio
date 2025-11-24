@@ -45,7 +45,7 @@ const Hero = () => {
   }, [displayText, isDeleting, currentRole, roles]);
 
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       {/* Background Elements */}
       <div className="hero-background">
         <div className="hero-blob-1"></div>
@@ -90,12 +90,15 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="hero-buttons">
-              <button className="btn-primary">
-                View My Work
-                <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </button>
+              <a href="#portfolio">
+
+                <button className="btn-primary">
+                  View My Work
+                  <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              </a>
 
               <button className="btn-secondary">
                 <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
