@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Hero.css';
 import Profiler from "../../assets/images/profile.png";
+
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +16,9 @@ const Hero = () => {
     "React Developer",
     "Node.js Developer"
   ];
+
+  // YouTube demo video URL
+  const demoVideoUrl = "https://youtu.be/QWZzl9uwfbs";
 
   useEffect(() => {
     setIsVisible(true);
@@ -43,6 +47,11 @@ const Hero = () => {
 
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, currentRole, roles]);
+
+  const handleWatchDemo = () => {
+    // Open the YouTube video in a new tab
+    window.open(demoVideoUrl, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <section id="home" className="hero-section">
@@ -91,7 +100,6 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="hero-buttons">
               <a href="#portfolio">
-
                 <button className="btn-primary">
                   View My Work
                   <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,7 +108,7 @@ const Hero = () => {
                 </button>
               </a>
 
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={handleWatchDemo}>
                 <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
