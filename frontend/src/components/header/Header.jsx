@@ -70,7 +70,7 @@ const Header = () => {
                 <div className="logo-bar-animated"></div>
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent dark:from-purple-400 dark:to-blue-400">
-                Abushe
+                AMIR 
               </span>
             </div>
             <div className="logo-glow"></div>

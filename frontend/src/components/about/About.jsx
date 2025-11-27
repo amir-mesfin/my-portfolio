@@ -7,12 +7,12 @@ const About = () => {
 
   const personalInfo = [
     { label: 'Birthday', value: '1 May 2003', icon: '🎂' },
-    { label: 'Website', value: 'www.abushe.dev', icon: '🌐' },
-    { label: 'Phone', value: '+251 912 345 678', icon: '📱' },
+    { label: 'Website', value: 'https://amir136.vercel.app', icon: '🌐' },
+    { label: 'Phone', value: '+251 962 945 025', icon: '📱' },
     { label: 'City', value: 'Dessie, Ethiopia', icon: '🏙️' },
     { label: 'Age', value: '21', icon: '🎯' },
     { label: 'Degree', value: "Bachelor's Degree", icon: '🎓' },
-    { label: 'Email', value: 'abushe136@example.com', icon: '📧' },
+    { label: 'Email', value: 'amir.mesfin136@example.com', icon: '📧' },
     { label: 'Freelance', value: 'Available', icon: '💼', status: 'available' }
   ];
 
@@ -66,7 +66,7 @@ const About = () => {
               <div className="profile-image-wrapper">
                 <img
                   src={about}
-                  alt="Abushe Mesfin"
+                  alt="Amir Mesfin"
                   className="profile-image"
                 />
                 <div className="image-overlay"></div>
@@ -105,7 +105,7 @@ const About = () => {
               </h3>
               <div className="description-text">
                 <p>
-                  I am <strong>Abushe Mesfin</strong>, a passionate Software Engineering student at
+                  I am <strong>Amir Mesfin</strong>, a passionate Software Engineering student at
                   <strong> Arba Minch University</strong> with a strong focus on modern web development.
                   I specialize in building clean, responsive, and user-friendly applications using
                   <strong> React, Tailwind, Node.js, and SQL</strong>.
