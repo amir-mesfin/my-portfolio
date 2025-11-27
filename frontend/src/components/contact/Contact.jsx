@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: '📱',
       title: 'Phone',
-      value: '+251 912 345 678',
-      link: 'tel:+251912345678',
+      value: '+251 962 945 025',
+      link: 'tel:+251962945025',
       description: 'Call or WhatsApp available'
     },
     {
