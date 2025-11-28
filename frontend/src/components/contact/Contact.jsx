@@ -30,7 +30,7 @@ const Contact = () => {
     },
     {
       icon: '📍',
-      title: 'Location',
+      title: 'Location ',
       value: 'Dessie, Ethiopia',
       link: 'https://maps.google.com/?q=Dessie,Ethiopia',
       description: 'Available for remote work worldwide'
